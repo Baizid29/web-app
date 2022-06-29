@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web App</title>
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="../node_modules/mdb-ui-kit/css/mdb.min.css">
+	<style>
+		.main-title {
+			font-family: Arial;
+			font-size: 35px;
+			width: 600px;
+		}
+
+		.main-subtitle {
+			font-family: Arial;
+			font-size: 25px;
+		}
+
+		h2 {
+			font-size: 40px;
+			font-family: Arial;
+			font-weight: bolder;
+			font-style: bold;
+			color: rgb(127, 127, 241);
+		}
+
+		.signin {
+			padding: 20px;
+			border: 7px solid rgb(194, 194, 221);
+			border-radius: 15px;
+		}
+
+		img {
+			height: 250px;
+			width: 250px;
+		}
+
+		.parent {
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+
+		.img1 {
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+
+		.img2 {
+			position: absolute;
+			top: 90px;
+			left: 90px;
+		}
+
+		.id {
+			height: 10px;
+			width: 10px;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.col {
+			float: left;
+		}
+
+		.col #pic {
+			width: 100%;
+			height: 60px;
+			padding-right: 100px;
+		}
+
+		li {
+			list-style: none;
+
+
+		}
+
+		.footers {
+			height: 300px;
+			background-color: rgba(0, 30, 70, 1);
+			margin: 0px;
+			border-top: rgba(245, 231, 231, 0.822) 5px solid;
+			/* border-top: rgba(216, 214, 214,0.2) 10px solid; */
+
+			margin-bottom: 20px;
+		}
+
+		.foot {
+			/* display: grid; */
+			/* grid-template-columns: 3fr 3fr 3fr 3fr; */
+			margin-top: 50px;
+			padding-left: 100px;
+			font-family: Arial;
+			font-weight: lighter;
+			font-size: 12px;
+			color: rgba(216, 214, 214, 0.6);
+		}
+
+		h4 {
+			text-decoration-line: underline;
+			text-decoration-color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Background image -->
+	<div class="bg-image" style=" background-image: url('../public/Images/carousel-1.jpg');height: 100vh;">
+		<div class="mask" style="background-color: rgba(0,30,70, 0.7);">
+			<div class="container-fluid m-4">
+				<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+					<div class="container">
+						<a class="navbar-brand" href="#">LOREM IPSUM</a>
+
+						<div class="collapse navbar-collapse">
+							<div class="mx-auto"></div>
+							<a class="nav-link text-white" href="#">HOME</a>
+							<a class="nav-link text-white" href="#">ABOUT US</a>
+							<a class="nav-link text-white" href="#">HOW IT WORKS</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="row" style="margin-top: 150px">
+
+				<div class="col-6">
+					<section class="d-flex justify-content-center align-items-center text-center text-white mb-4">
+						<div>
+							<p class="main-title">Welcome To The Community</p>
+							<p class="main-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+								consequuntur, harum quod asperiores eos dignissimos .</p>
+							<div>
+								<button class="btn btn-primary">
+									<span class="bi bi-person-plus-fill"></span>
+									Register</button>
+							</div>
+						</div>
+					</section>
+
+				</div>
+
+
+				<div class="col-6">
+
+					<div class="d-flex justify-content-center align-items-center "
+						style="height:350px;margin-top: 15px;">
+						<div class="signin">
+							<h2 class="text-white">Login</h2>
+							<div class="mb-2">
+								<label for="email" class="form-label"> Email or Phone</label>
+								<div class="input-group">
+									<span class=" input-group-text bi bi-envelope"></span>
+									<input type="email" name="UserName" class="form-control"
+										placeholder="Email or phone">
+								</div>
+							</div>
+							<div class="mb-2">
+								<label for="password" class="form-label">Password</label>
+								<div class="input-group">
+									<span class=" input-group-text bi bi-lock-fill"></span>
+									<input type="password" name="password" class="form-control" placeholder="Password">
+								</div>
+							</div>
+							<div class="mt-3">
+								<button class="btn btn-primary w-100">Sign in</button>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Background image -->
+
+	<div class="container-fluid">
+		<div class="row" style="margin-left:60px;margin-top:30px">
+
+			<div class="col-5">
+				<div class="parent">
+					<img class="img1" src="../public/Images/about-2.jpg">
+					<img class="img2" src="../public/Images/about-1.jpg">
+				</div>
+			</div>
+
+			<div class="col-6" style="margin-top:30px;">
+				<h1>ABOUT US</h1>
+				<div>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus dicta suscipit tenetur commodi
+						possimus, atque ut aspernatur ipsa asperiores culpa ipsum rem quis sint accusantium quas nisi
+						facilis error sed laborum aliquam ad et. Magnam </p>
+					<p>doloremque repellendus quam ipsam enim,
+						reprehenderit hic odit ea voluptas ab, id totam porro consequatur excepturi incidunt adipisci
+						molestiae esse quibusdam est fugit distinctio! Illum</p>
+					<p>odio voluptates ut? Tempora perferendis nam
+						fuga debitis consequatur distinctio, alias veniam enim impedit quam laudantium pariatur dolorum
+						praesentium facere nulla dolorem quasi est. Asperiores </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" style="margin-top: 30px;">
+		<h1 style="margin-left: 60px;">HOW IT WORKS</h1>
+		<div class="card text-center mt-4" style="border:0.1px solid rgb(194, 194, 221);">
+			<div class="card-body">
+				<h5 class="card-title">Lorem ipsum dolor sit amet elit. Phasselus nec pretium ornare velit non</h5>
+				<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				<a href="#" class="btn btn-outline"><span class="bi bi-person-plus-fill"></span>Register</a>
+			</div>
+		</div>
+
+		<div class="row mt-4">
+
+			<div class="col-sm-4">
+				<div class="card text-center" style="border:0.1px solid rgb(194, 194, 221);">
+					<div class="card-body ">
+						<span class="d-flex justify-content-center"><img class="img-fluid w-25"
+								src="../public/Images/icon-4.png"></span>
+						<h5 class="card-title">Register for Free</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel nobis,
+							reprehenderit ullam odio consequm</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4">
+				<div class="card text-center" style="border:0.1px solid rgb(194, 194, 221);">
+					<div class="card-body ">
+						<span class="d-flex justify-content-center"><img class="img-fluid w-25"
+								src="../public/Images/icon-1.png"></span>
+						<h5 class="card-title">Take Surveys</h5>
+						<p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, ipsum.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4">
+				<div class="card text-center" style="border:0.1px solid rgb(194, 194, 221);">
+					<div class="card-body ">
+						<span class="d-flex justify-content-center"><img class="img-fluid w-25"
+								src="../public/Images/icon-6.png"></span>
+						<h5 class="card-title">Redeem</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, rerum.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="container-fluid" style="margin-top: 20px;">
+		<h1 style="margin-left: 40px;">Global Incentive Partners</h1>
+		<div class="row">
+			<div class="col-5">
+			</div>
+			<div class="col">
+				<img id="pic" src="../public/Images/logo-amazon-404px-grey.png">
+			</div>
+			<div class="col">
+				<img id="pic" src="../public/Images/Starbucks-Logo-600x600-gray.png">
+			</div>
+			<div class="col">
+				<img id="pic" src="../public/Images/target-png.png">
+			</div>
+			<div class="col">
+				<img id="pic" src="../public/Images/itunes.png">
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<div class="footers">
+			<div class="row">
+				<div class="col-3">
+
+					<div class="foot">
+						<ul>
+							<h4>Contact Us</h4>
+							<li class="bi bi-geo-alt-fill"> 123 street,New York,USA</li>
+							<li class="bi bi-telephone-fill"> +012 345 67890</li>
+							<li class="bi bi-envelope-fill"> info@example.com</li>
+						</ul>
+						<div class="row">
+							<nav>
+								<ul>
+									<li>
+										<span class="bi bi-twitter p-1"></span>
+										<span class="bi bi-facebook p-1"></span>
+										<span class="bi bi-linkedin p-1"></span>
+										<span class="bi bi-google p-1"></span></span>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+
+					<div class="foot">
+						<ul>
+							<h4>Quick Links</h4>
+							<li class="bi bi-chevron-right"> Terms of Use</li>
+							<li class="bi bi-chevron-right"> Privacy Policy</li>
+							<li class="bi bi-chevron-right"> FAQs</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-3">
+
+					<div class="foot">
+						<ul>
+							<h4>Write Us</h4>
+							<li>E-mail</li>
+							<li>XYZ@mail.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</footer>
+
+
+
+	<script src="../node_modules/jquery/dist/jquery.js"></script>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+	<script src="../node_modules/mdb-ui-kit/js/mdb.min.js"></script>
+
+</body>
+
+</html>
